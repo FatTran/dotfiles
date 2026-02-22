@@ -2,7 +2,7 @@
 * {
   font-family: "CaskaydiaCove Nerd Font", "Font Awesome 6 Free", "Font Awesome 6 Free Solid";
   font-weight: bold;
-  font-size: 15px;
+  font-size: 16px;
   color: #dcdfe1;
 }
 
@@ -19,10 +19,10 @@
 #tray{
   /*background-color: rgba(29,31,46, 0.95);*/
   background-color: rgba(15,27,53,0.9);
-  padding: 4px 2px; /* 保持内部间距 */
+  padding: 4px 6px; /* 保持内部间距 */
   margin-top: 6px; /* 外部间距增加 */
-  margin-left: 2px; /* 外部间距增加 */
-  margin-right: 2px; /* 外部间距增加 */
+  margin-left: 6px; /* 外部间距增加 */
+  margin-right: 6px; /* 外部间距增加 */
   border-radius: 10px;
   border-width: 0px;
 }
@@ -61,7 +61,7 @@
   margin-top: 6px; /* 与屏幕顶部留出距离 */
   /*margin-bottom: 4px;*/
   padding: 4px 2px; /* 保持内部间距 */
-  border-width: 00px;
+  border-width: 0px;
 }
 
 #custpm-temperature.critical,
@@ -73,7 +73,7 @@
 /* 鼠标悬停变亮一点 */
 #bluetooth:hover,
 #network:hover,
-/*#tray:hover,*/
+#tray:hover,
 #backlight:hover,
 #battery:hover,
 #pulseaudio:hover,
@@ -119,4 +119,3 @@
   font-weight: 500;
   font-style: italic;
 }
-
