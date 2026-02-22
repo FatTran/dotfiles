@@ -19,10 +19,10 @@
 #tray{
   /*background-color: rgba(29,31,46, 0.95);*/
   background-color: rgba(15,27,53,0.9);
-  padding: 4px 6px; /* 保持内部间距 */
+  padding: 4px 2px; /* 保持内部间距 */
   margin-top: 6px; /* 外部间距增加 */
-  margin-left: 6px; /* 外部间距增加 */
-  margin-right: 6px; /* 外部间距增加 */
+  margin-left: 2px; /* 外部间距增加 */
+  margin-right: 2px; /* 外部间距增加 */
   border-radius: 10px;
   border-width: 0px;
 }
