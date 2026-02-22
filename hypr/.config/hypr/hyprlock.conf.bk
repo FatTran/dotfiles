@@ -1,0 +1,114 @@
+source = /home/fat/.config/hypr/hyprland.conf
+
+$accent = $mauve
+$accentAlpha = $mauveAlpha
+#$font = JetBrainsMono Nerd Font
+$font = CaskaydiaCove NF
+
+# GENERAL
+general {
+  hide_cursor = false
+}
+
+# BACKGROUND
+background {
+  monitor =
+  path = /home/fat/.config/wallpapers/koi.png
+  blur_passes = 2
+  color = $base
+}
+
+# LAYOUT
+label {
+  monitor =
+  text = Layout: $LAYOUT
+  color = $text
+  font_size = 25
+  font_family = CaskaydiaCove NF
+  position = 30, -30
+  halign = left
+  valign = top
+}
+
+# TIME
+label {
+  monitor =
+  text = $TIME
+  color = $text
+  font_size = 90
+  font_family = CaskaydiaCove NF
+  position = -30, 0
+  halign = right
+  valign = top
+}
+
+# DATE
+label {
+  monitor =
+  text = cmd[update:43200000] date +"%A, %d %B %Y"
+  color = $text
+  font_size = 25
+  font_family = CaskaydiaCove NF
+  position = -30, -150
+  halign = right
+  valign = top
+}
+
+# USER NAME
+label {
+  monitor =
+  text = $USER
+  color = $text
+  font_size = 30
+  font_family = CaskaydiaCove NF
+  position = 0, 50
+  halign = center
+  valign = center
+}
+
+# FINGERPRINT
+#{
+#  monitor = "";
+#  text = "$FPRINTPROMPT";
+#  color = "$text";
+#  font_size = 14;
+#  font_family = $font;
+#  position = "0, -107";
+#  halign = "center";
+#  valign = "center";
+#}
+
+# USER AVATAR
+image {
+  monitor =
+  path = /home/fat/.config/wallpapers/koi.png
+  size = 200
+  border_color = rgb(255, 255, 255)
+  rounding = -1
+  position = 0, 200
+  halign = center
+  valign = center
+}
+
+# INPUT FIELD
+input-field {
+  monitor =
+  size = 300, 60
+  outline_thickness = 4
+  dots_size = 0.2
+  dots_spacing = 0.2
+  dots_center = true
+  outer_color = rgb(0, 0, 0)
+  inner_color = rgb(255, 255, 255)
+  font_color = rgb(0, 0, 0)
+  fade_on_empty = false
+  placeholder_text = Input Passkey
+  hide_input = false
+  check_color = rgb(240, 236, 0)
+  fail_color = rgb(204, 34, 34)
+  fail_text = Wrong passkey
+  capslock_color = rgb(94, 114, 242)
+  position = 0, -47
+  halign = center
+  valign = center
+}

@@ -1,0 +1,17 @@
+local wezterm = require("wezterm")
+
+local custom = wezterm.config_builder()
+
+custom.font = wezterm.font("CaskaydiaCove Nerd Font")
+custom.font_size = 14
+
+custom.color_scheme = wezterm.color.get_builtin_schemes()["Catppucin Frappe"]
+
+custom.enable_tab_bar = false
+
+custom.window_background_opacity = 0.9
+custom.kde_window_background_blur = true
+
+return {
+    color_scheme = "Catppucin Frappe",
+}
