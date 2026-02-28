@@ -9,8 +9,30 @@ config.color_scheme = "Catppuccin Mocha"
 
 config.hide_tab_bar_if_only_one_tab = true
  
-config.window_background_opacity = 0.95
 config.kde_window_background_blur = true
+
+-- Set initial transparency
+config.window_background_opacity = 0.95
+
+-- Setup Toggle Keybinding
+wezterm.on('toggle-opacity', function(window, pane)
+    local overrides = window:get_config_overrides() or {}
+    if overrides.window_background_opacity  == 1 then
+        overrides.window_background_opacity = 0.95
+    else
+        overrides.window_background_opacity = 1
+    end
+    window:set_config_overrides(overrides)
+end)
+
+--config.keys = {
+--  {
+--    key = 'o', 
+--    mods = 'CTRL', 
+--    action = wezterm.action.EmitEvent("toggle-opacity")
+--  }
+--}
+
 
 -- Move tab bar to top
 config.tab_bar_at_bottom = true
@@ -69,7 +91,13 @@ config.keys = {
         end
       end),
     },
-  }}
+  },
+  {
+    key = 'o', 
+    mods = 'CTRL', 
+    action = wezterm.action.EmitEvent("toggle-opacity")
+  }
+}
 for i = 1, 8 do
   -- CTRL+ALT + number to activate that tab
   table.insert(config.keys, {
