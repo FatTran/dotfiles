@@ -93,8 +93,8 @@ config.keys = {
     },
   },
   {
-    key = 'o', 
-    mods = 'CTRL', 
+    key = 'o',
+    mods = 'CTRL|SHIFT',
     action = wezterm.action.EmitEvent("toggle-opacity")
   }
 }
