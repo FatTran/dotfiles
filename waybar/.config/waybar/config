@@ -8,7 +8,7 @@
     "tray",
     "custom/lock",
     "custom/reboot",
-    "custom/power",
+    "custom/power"
 //    "custom/cava"
   ],
   "modules-center": ["hyprland/window"],
