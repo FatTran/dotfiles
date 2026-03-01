@@ -1,4 +1,4 @@
-return 
+return
 {
     {
         'nvim-telescope/telescope.nvim', version = '*',
@@ -8,7 +8,7 @@ return
             { 'nvim-telescope/telescope-fzf-native.nvim', build = 'make' },
         },
         config = function()
-            local builtin = require("telescope.builtin") 
+            local builtin = require("telescope.builtin")
             vim.keymap.set('n', '<C-p>', builtin.find_files, {})
             vim.keymap.set('n', '<A-p>', builtin.live_grep, {})
         end

@@ -1,6 +1,12 @@
-#include<stdio.h>
+#include <stdio.h>
 
 int main(){
-    printf("Hello world");
-    return 0;
+    printf("hello world\n");
+    int a;
+    scanf("%d", &a);
+    if (a % 2 == 0) {
+        printf("Even\n");
+    } else {
+        printf("Odd\n");
+    }
 }
