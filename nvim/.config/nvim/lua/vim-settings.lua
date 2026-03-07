@@ -2,6 +2,7 @@ vim.cmd("set expandtab")
 vim.cmd("set tabstop=4")
 vim.cmd("set softtabstop=4")
 vim.cmd("set shiftwidth=4")
+vim.cmd("set mouse=")
 vim.g.mapleader = " "
 vim.keymap.set("n", "<leader>t", function()
   local cat = require("catppuccin")
@@ -9,3 +10,5 @@ vim.keymap.set("n", "<leader>t", function()
   cat.compile()
   vim.cmd.colorscheme(vim.g.colors_name)
 end)
+
+--vim.api.nvim_set_keymap('v', '<LeftRelease>', '"+ygv', {noremap = true, silent = true})
