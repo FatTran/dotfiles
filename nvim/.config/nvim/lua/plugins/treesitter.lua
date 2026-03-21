@@ -24,5 +24,7 @@ return {
 			end,
 		})
 		vim.bo.indentexpr = "v:lua.require'nvim-treesitter'.indentexpr()"
+        vim.bo.indentexpr = "v:cpp.require'nvim-treesitter'.indentexpr()"
+        vim.bo.indentexpr = "v:c.require'nvim-treesitter'.indentexpr()"
 	end,
 }

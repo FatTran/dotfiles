@@ -20,7 +20,7 @@ return
             local capabilities = require("cmp_nvim_lsp").default_capabilities()
             --local lspconfig = require("lspconfig")
             vim.lsp.config("lua_ls", {capabilities = capabilities})
-            vim.lsp.config("clangd", {capabilities = capabilities})
+            vim.lsp.config("clangd", {capabilities = capabilities, fallbackFlags = {'-std=c++23'}})
             vim.lsp.config("rust_analyzer", {capabilities = capabilities})
             vim.lsp.config("gopls", {capabilities = capabilities})
             vim.lsp.config("pyright", {capabilities = capabilities})
